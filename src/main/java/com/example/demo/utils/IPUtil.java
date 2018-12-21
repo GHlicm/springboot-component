@@ -1,4 +1,4 @@
-package com.example.demo.util;
+package com.example.demo.utils;
 /**
  * ip地址和整型格式进行互换
  * @author licm

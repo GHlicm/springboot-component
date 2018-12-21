@@ -1,10 +1,11 @@
-package com.example.demo.util;
+package com.example.demo.Service.impl;
 
 import java.io.File;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
+import com.example.demo.Service.MailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MailServiceImpl implements MailService{
+public class MailServiceImpl implements MailService {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	@Autowired
@@ -30,7 +31,6 @@ public class MailServiceImpl implements MailService{
 	 */
 	@Override
 	public void sendSimpleMail(String to, String subject, String content) {
-		// TODO Auto-generated method stub
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom(from);
 		message.setTo(to);
@@ -50,7 +50,6 @@ public class MailServiceImpl implements MailService{
 	 */
 	@Override
 	public void sendHtmlMail(String to, String subject, String content) {
-		// TODO Auto-generated method stub
 		MimeMessage message = mailSender.createMimeMessage();
 		
 		try {
@@ -64,7 +63,6 @@ public class MailServiceImpl implements MailService{
 			mailSender.send(message);
 			logger.info("html邮件发送成功!");
 		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
 			logger.error("发送html邮件时发生异常！", e);
 		}
 	}
@@ -96,7 +94,6 @@ public class MailServiceImpl implements MailService{
 	 */
 	@Override
 	public void sendInlineResourceMail(String to, String subject, String content, String rscPath, String rscId) {
-		// TODO Auto-generated method stub
 		MimeMessage message = mailSender.createMimeMessage();
 		try {
 			MimeMessageHelper helper = new MimeMessageHelper(message, true);

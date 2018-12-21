@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.demo.Service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +12,7 @@ import org.thymeleaf.context.Context;
 @SpringBootTest
 public class MailServiceTest {
 	@Autowired
-	private com.example.demo.util.MailService mailService;
+	private MailService mailService;
 	
 	@Autowired
 	private TemplateEngine templateEngine;
