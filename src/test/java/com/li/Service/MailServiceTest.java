@@ -1,4 +1,4 @@
-package com.example.demo.Service;
+package com.li.Service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

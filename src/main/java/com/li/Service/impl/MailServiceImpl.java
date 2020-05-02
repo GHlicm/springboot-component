@@ -1,11 +1,11 @@
-package com.example.demo.Service.impl;
+package com.li.Service.impl;
 
 import java.io.File;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
-import com.example.demo.Service.MailService;
+import com.li.Service.MailService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

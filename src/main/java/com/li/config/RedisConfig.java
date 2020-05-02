@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.li.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Value;

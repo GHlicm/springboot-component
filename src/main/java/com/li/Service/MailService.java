@@ -1,4 +1,4 @@
-package com.example.demo.Service;
+package com.li.Service;
 
 public interface MailService {
 

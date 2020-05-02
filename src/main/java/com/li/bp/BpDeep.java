@@ -1,4 +1,4 @@
-package com.example.demo.bp;
+package com.li.bp;
 
 import java.util.Random;
 
